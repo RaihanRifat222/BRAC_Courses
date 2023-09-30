@@ -1,0 +1,86 @@
+Simple linear regression
+
+Simple linear regression analysis is a statistical tool that gives us the ability to estimate the mathematical
+relationship between a dependent variable and an independent variable.
+E(y) = β0 + β1x
+
+The graph of the simple linear regression equation is a straight line; β0 is the y-intercept of the regression
+line which measures the value of y when x = 0, β1 is the slope which measures the average rate of change
+in dependent variable per unit change in independent variable, and E(y) is the mean or expected value of y
+for a given value of x.
+
+The estimated regression equation for simple linear regression follows.
+
+ŷ = b0 + b1x
+
+----------------
+
+Multiple Linear Regression
+
+A regression model that contains more than one independent variable is
+called a multiple regression model.
+
+The general multiple linear regression model is
+
+y = β0 + β1x1 + β2x2 + ⋯ + βpxp + ε
+
+-------------
+
+Central tendency - This measures the extent to which all the values are grouped around a
+typical or central value.
+I. They give us an idea about the concentration of the values in
+the central part of the distribution.
+II. It is the value of the variable, which is typical of the whole set.
+III. It represents all relevant information contained in the data in as
+few numbers as possible.
+IV. They give precise information, not information of a vague
+general type.
+
+--------------
+
+Variation or Dispersion –This measures the amount of dispersion or scattering of values
+away from a central value.
+
+What is Dispersion?
+• Measures of average (such as the median and mean) represent the typical
+value for a dataset. But within the dataset, the actual values usually differ from
+one another and from the average value itself.
+• The extent to which the central value are good representatives of the values
+in the original dataset depends upon the variability or dispersion in the
+original data.
+• Dispersion is the spread or scatter of item values from a measure of central
+tendency. Dispersion is usually measured as an average of deviations about
+some central value.
+• Dispersion thus is a type of average and is sometimes called a second order
+average. Datasets are said to have high dispersion or variation when they
+contain values considerably higher and lower than the central value.
+------
+
+Variance: the variance shows, on an average, how close the values of a
+variable are to the arithmetic mean.
+The sum of squared deviations is σσii=11 nn (xxii − xx�)22. The following graph shows
+the squared deviations of the values from their mean.
+
+-----
+Standard Deviation
+
+• The variance represents squared units, and therefore is not appropriate
+measure of dispersion when we wish to express the concept of dispersion in
+terms of the original unit.
+• The Standard deviation is another measure of dispersion. The standard
+deviation is the positive square root of the variance and is expressed in the
+original unit of the data.
+• Standard Deviation of variable XX, SSSS(X) = �VVVVVV(XX)
+
+
+-----------
+Conditional Probability (Review):
+Conditional probability is the probability of one event occurring based on the occurrence of a
+previous event.
+
+Bayes theoreom: 
+posterior probablity= (likelyhood term*prior probablity)/evidence
+
+----------
+A random variable is a numerical quantity which is obtained as a result of a random experiment.
+
