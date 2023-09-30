@@ -1,0 +1,37 @@
+TX_Router>enable
+TX_Router#
+TX_Router#configure terminal
+Enter configuration commands, one per line.  End with CNTL/Z.
+TX_Router(config)#interface GigabitEthernet0/0
+TX_Router(config-if)#ip address 125.86.96.225 255.0.0.0
+TX_Router(config-if)#ip address 125.86.96.225 255.255.255.224
+TX_Router(config-if)#no shutdown
+TX_Router(config-if)#
+%LINK-5-CHANGED: Interface GigabitEthernet0/0, changed state to up
+
+
+
+
+TX_Router(config-if)#exit
+TX_Router(config)#interface Serial0/0/0
+TX_Router(config-if)#ip address 125.86.97.26 255.255.255.224
+TX_Router(config-if)#ip address 125.86.97.26 255.255.255.252
+TX_Router(config-if)#
+
+
+NY_Router>enable
+NY_Router#
+NY_Router#configure terminal
+Enter configuration commands, one per line.  End with CNTL/Z.
+NY_Router(config)#interface Serial0/0/0
+NY_Router(config-if)#ip address 125.86.97.25 255.0.0.0
+NY_Router(config-if)#ip address 125.86.97.25 255.255.255.252
+NY_Router(config-if)#
+
+
+
+NY_Router(config)#interface GigabitEthernet0/1
+NY_Router(config-if)#ip address 125.86.96.193 255.255.255.252
+NY_Router(config-if)#ip address 125.86.96.193 255.255.255.224
+NY_Router(config-if)#no shutdown
+NY_Router(config-if)#
