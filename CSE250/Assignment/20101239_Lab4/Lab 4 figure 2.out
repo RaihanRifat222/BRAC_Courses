@@ -1,0 +1,141 @@
+
+**** 12/08/21 15:22:49 *********** Evaluation PSpice (Nov 1999) **************
+
+ * C:\Users\raiha\OneDrive\Desktop\Courses\CSE250\Assignment\20101239_Lab4\Lab 4 figure 2.sch
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+* Schematics Version 9.1 - Web Update 1
+* Wed Dec 08 15:22:45 2021
+
+
+
+** Analysis setup **
+.OP 
+
+
+* From [PSPICE NETLIST] section of pspiceev.ini:
+.lib "nom.lib"
+
+.INC "Lab 4 figure 2.net"
+
+**** INCLUDING "Lab 4 figure 2.net" ****
+* Schematics Netlist *
+
+
+
+V_V2         $N_0001 0 0V
+V_V1         $N_0002 0 5V
+R_R1         $N_0002 $N_0003  1.2k  
+R_R2         $N_0003 $N_0001  2.2k  
+R_R3         0 $N_0003  3.3k  
+R_R10         $N_0005 $N_0004  1.2k  
+R_R11         $N_0004 $N_0006  2.2k  
+R_R12         0 $N_0004  3.3k  
+V_V10         $N_0007 0 5V
+R_R13         $N_0007 $N_0008  1.2k  
+R_R14         $N_0008 $N_0009  2.2k  
+R_R15         0 $N_0008  3.3k  
+V_V8         $N_0005 0 0V
+V_V7         $N_0006 0 7V
+V_V9         $N_0009 0 7V
+
+**** RESUMING "Lab 4 figure 2.cir" ****
+.INC "Lab 4 figure 2.als"
+
+
+
+**** INCLUDING "Lab 4 figure 2.als" ****
+* Schematics Aliases *
+
+.ALIASES
+V_V2            V2(+=$N_0001 -=0 )
+V_V1            V1(+=$N_0002 -=0 )
+R_R1            R1(1=$N_0002 2=$N_0003 )
+R_R2            R2(1=$N_0003 2=$N_0001 )
+R_R3            R3(1=0 2=$N_0003 )
+R_R10           R10(1=$N_0005 2=$N_0004 )
+R_R11           R11(1=$N_0004 2=$N_0006 )
+R_R12           R12(1=0 2=$N_0004 )
+V_V10           V10(+=$N_0007 -=0 )
+R_R13           R13(1=$N_0007 2=$N_0008 )
+R_R14           R14(1=$N_0008 2=$N_0009 )
+R_R15           R15(1=0 2=$N_0008 )
+V_V8            V8(+=$N_0005 -=0 )
+V_V7            V7(+=$N_0006 -=0 )
+V_V9            V9(+=$N_0009 -=0 )
+.ENDALIASES
+
+
+**** RESUMING "Lab 4 figure 2.cir" ****
+.probe
+
+
+.END
+
+**** 12/08/21 15:22:49 *********** Evaluation PSpice (Nov 1999) **************
+
+ * C:\Users\raiha\OneDrive\Desktop\Courses\CSE250\Assignment\20101239_Lab4\Lab 4 figure 2.sch
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+($N_0001)    0.0000                   ($N_0002)    5.0000                       
+
+($N_0003)    2.6190                   ($N_0004)    2.0000                       
+
+($N_0005)    0.0000                   ($N_0006)    7.0000                       
+
+($N_0007)    5.0000                   ($N_0008)    4.6190                       
+
+($N_0009)    7.0000                   
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V2         1.190E-03
+    V_V1        -1.984E-03
+    V_V10       -3.175E-04
+    V_V8         1.667E-03
+    V_V7        -2.273E-03
+    V_V9        -1.082E-03
+
+    TOTAL POWER DISSIPATION   3.50E-02  WATTS
+
+
+**** 12/08/21 15:22:49 *********** Evaluation PSpice (Nov 1999) **************
+
+ * C:\Users\raiha\OneDrive\Desktop\Courses\CSE250\Assignment\20101239_Lab4\Lab 4 figure 2.sch
+
+
+ ****     OPERATING POINT INFORMATION      TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+
+
+          JOB CONCLUDED
+
+          TOTAL JOB TIME            0.00
+

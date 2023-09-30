@@ -1,0 +1,22 @@
+* C:\Users\raiha\OneDrive\Desktop\Courses\CSE250\Lab simulation\Figure 1.sch
+
+* Schematics Version 9.1 - Web Update 1
+* Wed Nov 03 14:08:22 2021
+
+
+
+** Analysis setup **
+.OP 
+
+
+* From [PSPICE NETLIST] section of pspiceev.ini:
+.lib "nom.lib"
+
+.INC "Figure 1.net"
+.INC "Figure 1.als"
+
+
+.probe
+
+
+.END
