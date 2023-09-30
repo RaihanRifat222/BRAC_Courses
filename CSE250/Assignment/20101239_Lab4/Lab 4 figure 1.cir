@@ -1,0 +1,22 @@
+* C:\Users\raiha\OneDrive\Desktop\Courses\CSE250\Assignment\20101239_Lab4\Lab 4 figure 1.sch
+
+* Schematics Version 9.1 - Web Update 1
+* Wed Dec 08 15:16:43 2021
+
+
+
+** Analysis setup **
+.OP 
+
+
+* From [PSPICE NETLIST] section of pspiceev.ini:
+.lib "nom.lib"
+
+.INC "Lab 4 figure 1.net"
+.INC "Lab 4 figure 1.als"
+
+
+.probe
+
+
+.END

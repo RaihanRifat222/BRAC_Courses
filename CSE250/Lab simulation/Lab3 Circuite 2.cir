@@ -1,0 +1,22 @@
+* C:\Users\raiha\OneDrive\Desktop\Courses\CSE250\Lab simulation\Lab3 Circuite 2.sch
+
+* Schematics Version 9.1 - Web Update 1
+* Tue Nov 16 14:47:50 2021
+
+
+
+** Analysis setup **
+.OP 
+
+
+* From [PSPICE NETLIST] section of pspiceev.ini:
+.lib "nom.lib"
+
+.INC "Lab3 Circuite 2.net"
+.INC "Lab3 Circuite 2.als"
+
+
+.probe
+
+
+.END

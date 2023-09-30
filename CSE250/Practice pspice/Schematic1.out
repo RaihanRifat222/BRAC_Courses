@@ -1,0 +1,114 @@
+
+**** 11/20/21 03:55:35 *********** Evaluation PSpice (Nov 1999) **************
+
+ * C:\Users\raiha\OneDrive\Desktop\Courses\CSE250\Practice pspice\Schematic1.sch
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+* Schematics Version 9.1 - Web Update 1
+* Sat Nov 20 03:55:31 2021
+
+
+
+** Analysis setup **
+.OP 
+
+
+* From [PSPICE NETLIST] section of pspiceev.ini:
+.lib "nom.lib"
+
+.INC "Schematic1.net"
+
+**** INCLUDING Schematic1.net ****
+* Schematics Netlist *
+
+
+
+R_R1         $N_0002 $N_0001  12  
+R_R2         $N_0002 $N_0003  12  
+R_R3         $N_0003 $N_0004  8  
+V_V3         $N_0001 $N_0004 20V
+R_R5         0 $N_0003  4  
+R_R6         0 $N_0002  6  
+R_R4         0 $N_0001  10  
+
+**** RESUMING Schematic1.cir ****
+.INC "Schematic1.als"
+
+
+
+**** INCLUDING Schematic1.als ****
+* Schematics Aliases *
+
+.ALIASES
+R_R1            R1(1=$N_0002 2=$N_0001 )
+R_R2            R2(1=$N_0002 2=$N_0003 )
+R_R3            R3(1=$N_0003 2=$N_0004 )
+V_V3            V3(+=$N_0001 -=$N_0004 )
+R_R5            R5(1=0 2=$N_0003 )
+R_R6            R6(1=0 2=$N_0002 )
+R_R4            R4(1=0 2=$N_0001 )
+.ENDALIASES
+
+
+**** RESUMING Schematic1.cir ****
+.probe
+
+
+.END
+
+**** 11/20/21 03:55:35 *********** Evaluation PSpice (Nov 1999) **************
+
+ * C:\Users\raiha\OneDrive\Desktop\Courses\CSE250\Practice pspice\Schematic1.sch
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+($N_0001)    6.9767                   ($N_0002)     .8970                       
+
+($N_0003)   -3.3887                   ($N_0004)  -13.0230                   
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V3        -1.204E+00
+
+    TOTAL POWER DISSIPATION   2.41E+01  WATTS
+
+
+**** 11/20/21 03:55:35 *********** Evaluation PSpice (Nov 1999) **************
+
+ * C:\Users\raiha\OneDrive\Desktop\Courses\CSE250\Practice pspice\Schematic1.sch
+
+
+ ****     OPERATING POINT INFORMATION      TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+
+
+          JOB CONCLUDED
+
+          TOTAL JOB TIME            0.00
+
