@@ -1,0 +1,138 @@
+data=open('input.txt')
+data=data.read()
+data=data.split('\n')
+new_data=[]
+for i in data:
+    i=i.split(' ',1)
+    new_data.append(i)
+
+
+
+keyword=['int','float','False', 'await', 'else', 'import', 'pass', 'None', 'break', 'except', 'in', 'True','class','is','return','and','continue','for','lambda','try', 'as','def', 'from', 'while','del', 'global','not', 'with','elif', 'if', 'or']
+k='Keywords:'
+key=[]
+for i in range(0,len(new_data)):
+
+    if k=='Keywords:' and new_data[i][0] in keyword and new_data[i][0] not in key :
+        k=k+' ' +new_data[i][0]
+    elif new_data[i][0] in keyword and new_data[i][0] not in key:
+        k = k + ', ' + new_data[i][0]
+    key.append(new_data[i][0])
+    if new_data[i][0] in keyword:
+        new_data[i].remove(new_data[i][0])
+
+math_oper=['+', '-', '*','**', '/','//', '%','=']
+mat=[]
+
+log_oper=['@', '&', '~','^',':=', '<', '>','<=','>=','==', '!=']
+log=[]
+ident=[]
+other=[]
+num=[]
+
+
+i=0
+while i<len(new_data):
+    j=0
+    s=None
+    #print(i)
+    if new_data[i]==[]:
+
+        i+=1
+        if i==len(new_data):
+            break
+
+    sup=new_data[i]
+
+    for s in sup:
+
+        while s!=None and j<len(s):
+
+            if s[j] in math_oper:
+
+                if s[j]=='=' and s[j+1]=='=' and '==' not in log:
+                    log.append('==')
+                elif s[j] not in mat:
+                    mat.append(s[j])
+
+            elif s[j] in log_oper:
+                if (s[j]=='>' or s[j]=='<' or s[j]=='!' ) and s[j+1]=='=' and (s[j]+s[j+1]) not in log:
+                    log.append(s[j]+s[j+1])
+                else:
+                    log.append(s[j])
+            elif s[j].isalpha():
+                st=s[j]
+                while j+1<len(s) and s[j+1].isalpha() :
+                    st=st+s[j+1]
+                    j=j+1
+                if s[j] not in ident:
+                    ident.append(st)
+
+            elif s[j].isnumeric():
+                n=s[j]
+
+                while s[j+1].isnumeric():
+                    n=n+s[j+1]
+                    j=j+1
+                if s[j+1]=='.':
+                    n=n+s[j+1]
+                    j+=1
+                    while s[j + 1].isnumeric():
+                        n = n + s[j + 1]
+                        j = j + 1
+                if n not in num:
+                    num.append(n)
+
+
+            else:
+                if s[j] not in other and s[j]!=' ':
+
+                    other.append(s[j])
+
+            j+=1
+
+    i+=1
+
+
+
+id='Identifiers:'
+for i in range (0,len(ident)):
+    if id == 'Identifiers:' :
+        id = id + ' ' + ident[i]
+    else:
+        id = id + ', ' + ident[i]
+
+
+m='Math Operators:'
+for i in range (0,len(mat)):
+    if m=='Math Operators:' :
+        m= m + ' ' + mat[len(mat)-i-1]
+    else:
+        m = m + ', ' + mat[len(mat)-i-1]
+
+l='Logical Operators:'
+for i in range (0,len(log)):
+    if l=='Logical Operators:' :
+        l = l + ' ' + log[i]
+    else:
+        l = l + ', ' + log[i]
+
+n= 'Numerical Values:'
+for i in range (0,len(num)):
+    if n== 'Numerical Values:' :
+        n = n + ' ' + num[i]
+    else:
+        n = n + ', ' + num[i]
+
+o='Others: '
+for i in other:
+    o=o+' '+i
+print(k)
+print(id)
+print(m)
+print(l)
+print(n)
+print(o)
+
+
+
