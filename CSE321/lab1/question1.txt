@@ -1,0 +1,100 @@
+hp@hp-HP-280-Pro-G6-Microtower-PC:~$ pwd
+/home/hp
+hp@hp-HP-280-Pro-G6-Microtower-PC:~$ ls
+20101299  Documents  Music         Public  Templates
+Desktop   Downloads  Pictures  snap        Videos
+hp@hp-HP-280-Pro-G6-Microtower-PC:~$ cd Desktop
+hp@hp-HP-280-Pro-G6-Microtower-PC:~/Desktop$ touch 23341083_1.txt 23341083_2.txt23341083_3.txt 23341083_4.txt
+
+
+
+
+hp@hp-HP-280-Pro-G6-Microtower-PC:~/Desktop$ mkdir raihan1 raihan2
+
+
+hp@hp-HP-280-Pro-G6-Microtower-PC:~/Desktop$ touch 23341083_1.txt 23341083_2.txt 23341083_3.txt 23341083_4.txt
+hp@hp-HP-280-Pro-G6-Microtower-PC:~/Desktop$ mkdir raihan1 raihan2
+hp@hp-HP-280-Pro-G6-Microtower-PC:~/Desktop$ mv 23341083_1.txt 23341083_2.txt raihan1
+hp@hp-HP-280-Pro-G6-Microtower-PC:~/Desktop$ cd raihan1
+hp@hp-HP-280-Pro-G6-Microtower-PC:~/Desktop/raihan1$ cd ..
+hp@hp-HP-280-Pro-G6-Microtower-PC:~/Desktop$ mv 23341083_3.txt raihan1
+hp@hp-HP-280-Pro-G6-Microtower-PC:~/Desktop$ cd raihan1
+hp@hp-HP-280-Pro-G6-Microtower-PC:~/Desktop/raihan1$ cp 23341081_1.txt 23341083_2.txt 
+hp@hp-HP-280-Pro-G6-Microtower-PC:~/Desktop/raihan1$ ls
+23341083_1.txt  23341083_2.txt  23341083_3.txt
+hp@hp-HP-280-Pro-G6-Microtower-PC:~/Desktop/raihan1$ pwd
+/home/hp/Desktop/raihan1
+hp@hp-HP-280-Pro-G6-Microtower-PC:~/Desktop/raihan1$ cp 23341083_1.txt 23341083_2.txt /home/hp/Desktop/raihan2
+hp@hp-HP-280-Pro-G6-Microtower-PC:~/Desktop/raihan1$ cd ..
+hp@hp-HP-280-Pro-G6-Microtower-PC:~/Desktop$ mkdir raihan3
+hp@hp-HP-280-Pro-G6-Microtower-PC:~/Desktop$ cp -r raihan1 raihan3
+hp@hp-HP-280-Pro-G6-Microtower-PC:~/Desktop$ cd raihan3
+hp@hp-HP-280-Pro-G6-Microtower-PC:~/Desktop/raihan3$ ls -l
+total 4
+drwxrwxr-x 2 hp hp 4096 জুলাই         10 12:20 raihan1
+hp@hp-HP-280-Pro-G6-Microtower-PC:~/Desktop/raihan3$ chmod go=rx *
+hp@hp-HP-280-Pro-G6-Microtower-PC:~/Desktop/raihan3$ ls -l
+total 4
+drwxr-xr-x 2 hp hp 4096 জুলাই         10 12:20 raihan1
+hp@hp-HP-280-Pro-G6-Microtower-PC:~/Desktop/raihan3$ cd ..
+hp@hp-HP-280-Pro-G6-Microtower-PC:~/Desktop$ ls -l
+total 16
+-rw-rw-r-- 1 hp hp        0 জুলাই         10 12:12  23341083_4.txt
+drwx------ 3 hp hp 4096 জুন            1 16:04 'Old Firefox Data'
+drwxrwxr-x 2 hp hp 4096 জুলাই         10 12:14  raihan1
+drwxrwxr-x 2 hp hp 4096 জুলাই         10 12:18  raihan2
+drwxrwxr-x 3 hp hp 4096 জুলাই         10 12:20  raihan3
+hp@hp-HP-280-Pro-G6-Microtower-PC:~/Desktop$ mv raihan3 /
+mv: cannot move 'raihan3' to '/raihan3': Permission denied
+hp@hp-HP-280-Pro-G6-Microtower-PC:~/Desktop$ sudo mv raihan3 /
+[sudo] password for hp:
+hp@hp-HP-280-Pro-G6-Microtower-PC:~/Desktop$ ls
+ 23341083_4.txt  'Old Firefox Data'   raihan1   raihan2
+hp@hp-HP-280-Pro-G6-Microtower-PC:~/Desktop$ rm -r *
+
+
+
+
+
+
+                                2
+
+
+hp@hp-HP-280-Pro-G6-Microtower-PC:~/Desktop$ nano course.txt
+hp@hp-HP-280-Pro-G6-Microtower-PC:~/Desktop$ ls
+course.txt
+hp@hp-HP-280-Pro-G6-Microtower-PC:~/Desktop$ grep -c "CSE" course.txt
+2
+
+
+
+
+
+
+                                         3
+hp@hp-HP-280-Pro-G6-Microtower-PC:~/Desktop$ ls -a /
+.   bin   cdrom  etc   lib        lib64   lost+found  mnt  proc         root  sbin  srv  tmp  var
+..  boot  dev        home  lib32  libx32  media           opt  raihan3  run   snap  sys  usr
+
+
+                                        4
+hp@hp-HP-280-Pro-G6-Microtower-PC:~/Desktop$ nano a.txt
+hp@hp-HP-280-Pro-G6-Microtower-PC:~/Desktop$ head -n 17 sample.txt | tail -n +5
+head: cannot open 'sample.txt' for reading: No such file or directory
+hp@hp-HP-280-Pro-G6-Microtower-PC:~/Desktop$ head -n 17 a.txt | tail -n +5
+- Example 2: The Persian kings created a vast empire that stretched from India to Egypt, and maintained it through a system of satrapies and roads.
+
+
+Body Paragraph 2: Religious reform was another strategy to gain the support and loyalty of the people, as well as to justify the divine right of the monarchs.
+- Example 1: The Egyptian pharaoh Akhenaten introduced a radical monotheism that worshiped the sun god Aten, and tried to erase the traditional polytheism of Egypt.
+- Example 2: The Indian emperor Ashoka converted to Buddhism after witnessing the horrors of war, and promoted the dharma or moral law throughout his realm.
+
+
+Body Paragraph 3: Cultural assimilation was a strategy to create a common identity and culture among the diverse peoples of the ancient monarchies, as well as to foster a sense of belonging and pride.
+- Example 1: The Persian kings adopted elements of the cultures they conquered, such as languages, customs, laws, and arts.
+- Example 2: The Chinese kings promoted the Confucian philosophy that emphasized loyalty, filial piety, humaneness, and ritual.
+
+
+Body Paragraph 4: Administrative innovation was a strategy to improve the efficiency and effectiveness of the government and bureaucracy of the ancient monarchies, as well as to ensure order and stability.
+- Example 1: The Assyrian kings developed a centralized administration that relied on governors, officials, scribes, and spies.
+- Example 2: The Indian emperor Chandragupta Maurya established a complex system of taxation, irrigation, roads, and spies.
